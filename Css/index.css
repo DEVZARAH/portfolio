@@ -1,0 +1,244 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --greenshade: #027333;
+  --lightgreen: #89d99d;
+  --green: #3b8c6e;
+  --greenblue: #04d939;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Divs color */
+.gradient{
+  height: 5px;
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.section-dkblue{
+  background-color: var(--dkblue);
+}
+.section-greenblue{
+  background-color: var(--greenblue);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  color: var(--green);
+}
+a:hover {
+  color: var(--lightgreen);
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+/* intro */
+#intro {
+padding: 4rem 1rem 10rem 1rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#intro .name {
+  font-family: var(--mono);
+}
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  display: block;
+  color: var(--greenblue);
+}
+/* contact  */
+
+#contact {
+  width: 400px;
+  text-align: center;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+#contact p:last-child {
+  margin-top: 3rem;
+}
+/* nav bar */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+nav h1 a {
+  font-family: var(--sans);
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--greenblue);
+}
+nav h1 [class*="fa-"] {
+  font-size: 90%;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--green);
+}
+.button {
+  background-color: var(--green);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: var(--mono);
+  color: var(--greenshade);
+  text-decoration: none;
+}
+.button:hover {
+  color: var(--white);
+  background-color: var(--lightgreen);
+}
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  justify-content: center;
+  font-size: 3rem;
+}
+#project{
+  padding: 4rem 1rem;
+}
+#project h2{
+  font-size: 4rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+#project h3{
+  color: var(--greenblue);
+}
+#project h4{
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+}
+.blackbox{
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#project ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+#project img{
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--lightgreen);
+  border-top: 1px solid var(--lightgreen);
+  padding: 1rem;
+  border-radius: 25px;
+}
+@media (min-width:550px){
+  article{
+    display: grid;
+    grid-template-columns:repeat(10,1fr);
+  
+    gap: 1rem;
+  }
+  #project img{
+      grid-row: 1/2;
+    grid-column: 1/6;
+  }
+  .text{
+    grid-row: 1/2;
+    grid-column: 5/11;
+    order:2;
+    text-align: right;
+  }
+  #project ul{
+    justify-content: flex-end;
+  }
+ #project .reverse img{
+ grid-row: 1/2;
+ grid-column: 5/11;
+ border-top: none;
+ border-left: none;
+border-right: 1px solid var(--lightgreen);
+border-bottom: 1px solid var(--lightgreen);
+ }
+ #project .reverse .text{
+   grid-row: 1/2;
+   grid-column: 1/6;
+   text-align: left;
+ }
+   #project .reverse ul{
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+  #project{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+}
