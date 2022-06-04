@@ -78,17 +78,24 @@ margin: 0 auto;
 #contact {
   width: 400px;
   text-align: center;
-  padding: 3rem 0;
+  padding: 4rem 1rem;
   margin: 0 auto;
 }
 #contact p:last-child {
   margin-top: 3rem;
 }
+#contact .first_p{
+padding: 1rem;
+}
+
 /* nav bar */
 nav {
   font-family: var(--mono);
   font-size: 80%;
   padding: 1rem;
+   position: sticky;
+   top: 0;
+   background-color: var(--black);
 }
 nav h1 a {
   font-family: var(--sans);
@@ -102,6 +109,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+ 
 }
 nav [class*="fa-"] {
   font-size: 150%;
