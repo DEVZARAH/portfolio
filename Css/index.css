@@ -62,6 +62,7 @@ header{
      position: sticky;
    top: 0;
    border-bottom: 1px solid;
+   border-radius: 10px;
    background-color: var(--black);
 /* box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
@@ -146,7 +147,7 @@ nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--green);
 }
-.button {
+a:focus {
   background-color: var(--green);
   padding: 0.5rem;
   border-radius: 5px;
