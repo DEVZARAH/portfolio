@@ -61,7 +61,7 @@ img{
 header{
      position: sticky;
    top: 0;
-   border-bottom: 1px solid;
+   border-bottom: 1px solid var(--greenblue);
    border-radius: 10px;
    background-color: var(--black);
 /* box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
