@@ -61,11 +61,12 @@ img{
 header{
      position: sticky;
    top: 0;
+   border-bottom: 1px solid;
+   border-radius: 10px;
    background-color: var(--black);
-   border-radius: 25px;
-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
+/* box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75); */
 
 }
 /* intro */
