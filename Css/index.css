@@ -98,8 +98,8 @@ nav {
   font-family: var(--mono);
   font-size: 80%;
   padding: 1rem;
-   /* position: sticky;
-   top: 0; */
+   position: sticky;
+   top: 0;
    background-color: var(--black);
 }
 
