@@ -10,7 +10,7 @@
     padding: 1rem;
     border-radius: 25px;
     margin-bottom: 1rem;
-      order:2;
+
 }
 #about h2{
     margin-bottom: 1rem;
@@ -22,7 +22,6 @@
     line-height: 1.5;
     border-radius:25px;
     font-size: var(--sans);
-    order: 2;
 }
 @media (min-width:550px){
     #about article{
