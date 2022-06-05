@@ -58,6 +58,16 @@ a:hover {
 img{
   width: 100%;
 }
+header{
+     position: sticky;
+   top: 0;
+   background-color: var(--black);
+   border-radius: 25px;
+box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(35,138,45,0.75);
+
+}
 /* intro */
 #intro {
 padding: 4rem 1rem 10rem 1rem;
@@ -82,14 +92,14 @@ margin: 0 auto;
 #contact {
   width: 400px;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   margin: 0 auto;
 }
 #contact p:last-child {
   margin-top: 3rem;
 }
 #contact .first_p{
-padding: 2rem;
+padding: 0 2rem;
 line-height: 1.5;
 }
 
@@ -98,9 +108,8 @@ nav {
   font-family: var(--mono);
   font-size: 80%;
   padding: 1rem;
-   position: sticky;
-   top: 0;
-   background-color: var(--black);
+
+
 }
 
 nav h1 a {
@@ -184,6 +193,9 @@ footer ul {
   border-radius: 10px;
   font-size: 1rem;
   line-height: 1.5;
+  box-shadow: 10px 10px 5px 0px rgba(193,214,217,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(193,214,217,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(193,214,217,0.75);
 }
 #project ul{
   list-style-type: none;
