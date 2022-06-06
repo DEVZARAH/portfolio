@@ -22,7 +22,7 @@ html {
 }
 /* Divs color */
 .gradient{
-  height: 5px;
+  height: 2px;
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 .section-dkblue{
@@ -146,6 +146,14 @@ nav a {
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--green);
+}
+.button{
+    background-color: var(--green);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: var(--mono);
+  color: var(--greenshade);
+  text-decoration: none;
 }
 a:focus {
   background-color: var(--green);
